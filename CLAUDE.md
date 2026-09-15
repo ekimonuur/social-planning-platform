@@ -102,11 +102,24 @@ arkadaşlık sistemi, grup rolleri, recurring events, masraf paylaşımı, AI ö
 
 ## Güncel Durum
 **Tarih:** 2026-09-15
-**Sprint:** Kurulum tamamlandı, Sprint 1'e geçiliyor
-**Son yapılan:** Laravel 12, Docker (PHP-FPM 8.3 + Nginx + PostgreSQL) üzerinde
-kuruldu, http://localhost:8000 üzerinden çalışıyor; Obsidian knowledge base
-entegrasyonu tanımlandı.
-**Sıradaki adım:** Sprint 1 — Authentication
+**Sprint:** Kurulum tamamlandı. Sprint 1 (Authentication) henüz başlamadı.
+**Son yapılan:**
+- Laravel 12, Docker (PHP-FPM 8.3 + Nginx + PostgreSQL) üzerinde kuruldu,
+  http://localhost:8000 üzerinden çalışıyor, migration'lar PostgreSQL'e uygulandı.
+- Obsidian knowledge base entegrasyonu tanımlandı (vault yolu, klasör
+  eşleşmeleri, 7 bölümlü öğrenme notu şablonu, Wikilink kuralı) — bkz.
+  Obsidian Knowledge Base bölümü. İlk test notu kaydedildi: `Learning/
+  JavaScript/Event Loop.md`.
+- Git commit attribution ayarlandı: Co-Authored-By trailer'ı kapatıldı
+  (`~/.claude/settings.json` → `attribution.commit/pr: ""`), sadece
+  `Claude-Session:` linki kalıyor.
+**Sıradaki adım:** Sprint 1 — Authentication (register/login/logout/profil).
+Henüz hiç kod yazılmadı, sıfırdan başlanacak.
+
+**Not (oturum başlangıcı davranışı):** Yeni bir oturum açıldığında Onur'a "en
+son ne yapmıştık" diye sorulmaz — bu bölüm + `git log` + Sprint Planı okunarak
+kaldığımız yerden otomatik devam edilir. Her önemli ilerlemeden sonra bu bölüm
+güncel tutulur.
 
 ## Obsidian Knowledge Base
 Vault: `/home/onur/Documents/Software Engineering/Software Engineering`
