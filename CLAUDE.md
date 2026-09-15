@@ -102,13 +102,47 @@ arkadaşlık sistemi, grup rolleri, recurring events, masraf paylaşımı, AI ö
 
 ## Güncel Durum
 **Tarih:** 2026-09-15
-**Sprint:** Kurulum aşaması
-**Son yapılan:** Proje kapsamı ve teknoloji kararları netleştirildi (PostgreSQL,
-Livewire→API→React Native sırası, AWS'in deploy aşamasına ertelenmesi)
-**Sıradaki adım:** Laravel kurulumu
+**Sprint:** Kurulum tamamlandı, Sprint 1'e geçiliyor
+**Son yapılan:** Laravel 12, Docker (PHP-FPM 8.3 + Nginx + PostgreSQL) üzerinde
+kuruldu, http://localhost:8000 üzerinden çalışıyor; Obsidian knowledge base
+entegrasyonu tanımlandı.
+**Sıradaki adım:** Sprint 1 — Authentication
+
+## Obsidian Knowledge Base
+Vault: `/home/onur/Documents/Software Engineering/Software Engineering`
+
+Klasör eşleşmeleri:
+- Öğrenme notları → `Learning/<teknoloji>/`
+- Mülakat notları → `Interview/`
+- Bug ve önemli dersler → `Bugs & Lessons/`
+- Proje notları (bu projeye özel, genel öğrenme değil) → `Projects/`
+- Mimari/teknik kararlar → `Decisions/` — **sadece** projeden bağımsız veya
+  genel mühendislik öğrenme sürecine ait kararlar için. Bu projeye özel, kodla
+  sıkı bağlı teknik kararlar hâlâ `docs/decisions/`'da kalır (bkz. Alınan
+  Kararlar). Aynı ADR iki yerde tutulmaz.
+
+Kurallar:
+1. Rutin kod değişiklikleri, günlük iş veya önemsiz bilgiler Obsidian'a
+   kaydedilmez.
+2. Yeni ve önemli bir teknik kavram öğrenildiğinde `Learning/` altında ilgili
+   teknoloji klasörüne kaydedilir.
+3. Önemli bir mimari/teknik karar alındığında (yukarıdaki ayrıma göre)
+   `Decisions/` altında ADR olarak kaydedilir.
+4. Önemli bir bug ve ondan çıkan ders `Bugs & Lessons/` altında kaydedilir.
+5. Mülakatta sorulabilecek önemli bir konu `Interview/` altında kaydedilir.
+6. Var olan bir konu notu varsa yeni dosya açmak yerine mevcut not güncellenir.
+7. Onur "Obsidian'a kaydet" dediğinde uygun klasör Claude tarafından belirlenir.
+8. Onur'un bir konuyu gerçekten anlayıp anlamadığı belirsizse, önce kısa bir
+   soru/kontrolle doğrulanır — anlaşılmamış bir şey anlaşılmış gibi kaydedilmez.
+9. Notlar kısa, pratik, teknik ve tekrar edilebilir olur; gereksiz uzun AI
+   açıklamaları yazılmaz.
+10. Önemli bir kavram kaydedilmeden önce mümkünse kısa bir özet gösterilip
+    Onur'un onayı beklenir.
 
 ## Alınan Kararlar
-- `docs/decisions/` altında numaralı dosyalar olarak tutulacak
+- `docs/decisions/` altında numaralı dosyalar olarak tutulacak (bu projeye özel,
+  kodla sıkı bağlı kararlar — genel/öğrenme amaçlı kararlar için bkz. Obsidian
+  Knowledge Base)
 
 ## Oturum Geçmişi
 - `docs/sessions/` altında tarih bazlı dosyalar olarak tutulacak
