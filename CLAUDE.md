@@ -139,6 +139,29 @@ Kurallar:
 10. Önemli bir kavram kaydedilmeden önce mümkünse kısa bir özet gösterilip
     Onur'un onayı beklenir.
 
+### Öğrenme Notu Şablonu (Learning/)
+`Learning/` altına kaydedilen her not şu 7 bölümü kullanır:
+
+1. **Kendi Anlatımım** — Onur'un konuyu kendi cümleleriyle anlatımı, olduğu
+   gibi (mümkün olduğunca değiştirilmeden). Bu bölümde düzeltme yapılmaz.
+2. **Teknik Gerçek / Tamamlayıcı Bilgiler** — Onur'un anlatımındaki eksikler
+   tamamlanır, yanlış anlaşılan noktalar açıkça düzeltilir, gerekli teknik
+   ayrıntılar eklenir. Gereksiz akademik/uzun açıklamalardan kaçınılır.
+3. **Nasıl Çalışır?** — Konunun bütünsel ve teknik olarak doğru açıklaması.
+4. **Örnekler** — Özellikle kodla öğrenilen konularda pratik örnekler.
+5. **Sık Yapılan Hatalar** — Onur'un yaptığı önemli hatalar + konuyla ilgili
+   yaygın yanlış anlamalar.
+6. **Mülakat Soruları** — Konuyla ilgili önemli mülakat soruları + kısa cevap
+   ipuçları.
+7. **Hâlâ Karıştırdığım Şeyler** — Onur'un henüz tam anlamadığı veya
+   netleştirilmesi gereken noktalar.
+
+**Kritik kural:** Onur'un kendi anlatımı teknik gerçek olarak kabul edilmez —
+önce doğruluğu kontrol edilir, yanlış/eksikse bölüm 2'de düzeltilir, ama bölüm
+1'deki kendi anlatımı silinmez veya değiştirilmez. Not gereksiz yere
+uzatılmaz, ama profesyonel anlaşılma için önemli bir bilgi sırf Onur
+söylemedi diye atlanmaz.
+
 ## Alınan Kararlar
 - `docs/decisions/` altında numaralı dosyalar olarak tutulacak (bu projeye özel,
   kodla sıkı bağlı kararlar — genel/öğrenme amaçlı kararlar için bkz. Obsidian
