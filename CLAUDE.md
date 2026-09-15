@@ -138,6 +138,12 @@ Kurallar:
    açıklamaları yazılmaz.
 10. Önemli bir kavram kaydedilmeden önce mümkünse kısa bir özet gösterilip
     Onur'un onayı beklenir.
+11. Yeni bir öğrenme notu oluşturulurken, konuyla doğrudan ilişkili ve vault'ta
+    **zaten mevcut olan** notlara `[[Wikilink]]` ile bağlantı kurulur (mümkünse
+    ilgili hub/ana konu notu dahil, örn. `[[JavaScript]]`). Sadece gerçekten
+    ilgili notlara link verilir — Graph View'da bağlantı oluşsun diye alakasız
+    notlara link verilmez. Vault'ta henüz olmayan bir konu için boş/yeni not
+    açılmaz. Mevcut notların içine geriye dönük link eklemek zorunlu değildir.
 
 ### Öğrenme Notu Şablonu (Learning/)
 `Learning/` altına kaydedilen her not şu 7 bölümü kullanır:
